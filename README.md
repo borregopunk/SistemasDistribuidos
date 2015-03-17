@@ -1,2 +1,2 @@
-# python01
+# Carpeta python01
 Pablo Borrego Gutierrez
