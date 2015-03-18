@@ -42,6 +42,7 @@ def crearEncadenadas(elementos_actuales, palabra_temporal, pokedex, lista_tempor
         i+=1
     return lista_temporal
 
+#Funcion que recibe una lista de listas y devuelve la lista de mayor tamaño
 def devolverMayorLista(lista):
     mayor = 0
     for i in range(0, len(lista)):
