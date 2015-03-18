@@ -1,2 +1,2 @@
-# Carpeta python01
-Pablo Borrego Gutierrez
+### SISTEMAS DISTRIBUIDOS ###
+
