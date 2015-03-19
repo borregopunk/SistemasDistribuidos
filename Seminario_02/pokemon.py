@@ -11,6 +11,7 @@
 def abrirArchivo(URLfichero):
     fichero = open(URLfichero, "r")
     contenido_fichero = fichero.readlines()
+    fichero.close()
     return contenido_fichero
 
 #Funcion que recibe un string y lo recorre, insertando en cada posicion 
@@ -42,7 +43,7 @@ def crearEncadenadas(elementos_actuales, palabra_temporal, pokedex, lista_tempor
         i+=1
     return lista_temporal
 
-#Funcion que recibe una lista de listas y devuelve la lista de mayor tamaño
+#Funcion que recibe una lista de listas y devuelve la lista de mayor tamano
 def devolverMayorLista(lista):
     mayor = 0
     for i in range(0, len(lista)):
