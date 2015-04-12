@@ -1,0 +1,15 @@
+import twitter
+import io
+import json
+
+#Funcion para la conexion.	
+def oauth_login():
+    CONSUMER_KEY = '75VGczgntSdDk4YoeHalFkoJ4'
+    CONSUMER_SECRET = 'YiPLwwArmUEGZ92MOu2uizK2yfFhGKL1uVMZpkdY2wxtzOFOrz'
+    OAUTH_TOKEN = '3108944081-YNshx0lLl1JQgTkvSDQBSiooDhKWcGOst8WT3A7'
+    OAUTH_TOKEN_SECRET = 'KJKKH0rNIXSsrQgdmksjjsbHj74Jt1prHpnMmlMvkbJB7'
+
+    auth = twitter.oauth.OAuth(OAUTH_TOKEN, OAUTH_TOKEN_SECRET, CONSUMER_KEY, CONSUMER_SECRET)
+
+    twitter_api = twitter.Twitter(auth=auth)
+    return twitter_api
