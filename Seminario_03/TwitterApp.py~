@@ -23,7 +23,7 @@ GoogleMaps(app)
 #<-------># App #<------->#
 palabra_a_buscar = raw_input('Introduzca la palabra para buscar: ')
 numero_de_tweets = int(raw_input('Introduzca el numero de tweets que desee recibir: '))
-resultado_busqueda = miUsuario.search.tweets(q=palabra_a_buscar, count=numero_de_tweets, geocode='40.00,-3.7,350mi')
+resultado_busqueda = miUsuario.search.tweets(q=palabra_a_buscar, count=numero_de_tweets, geocode='40.00,-3.7,300mi')
 save_json('busqueda', resultado_busqueda)
 contenido = json.loads(open('busqueda.json').read())
 lista_coordenadas = []
