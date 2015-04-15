@@ -31,7 +31,7 @@ def buscar():
 	    lng=-3.7,
 	    markers=lista_coordenadas,
 	    zoom = 6,
-		style="height:550px;width:1200px;margin:0;"
+		style="width: 100%; height: 100%; margin: 0 auto; vertical-align: middle;"
 	) 
 	return render_template('template2.html', mymap=mymap)
 
